@@ -9,7 +9,7 @@
         <img src="../../assets/images/icons/arrow-right.svg" alt="arrow icon">
         <button>industries</button>
         <img src="../../assets/images/icons/arrow-right.svg" alt="arrow icon">
-        <button class="gray">fintech</button>
+        <button class="selected">fintech</button>
       </div>
 
       <div class="right-group">
@@ -28,7 +28,7 @@
     </div>
 
   <div class="main-section">
-    <div class="wrapper">
+    <div class="main-section__wrapper">
       <div class="left-group">
         <div class="header">
           Kick-start your <span>Fintech Project</span> with a team that feels like yours
@@ -44,6 +44,10 @@
         <img src="../../assets/images/desktop.png" alt="desktop image">
 
         <img class="square-pattern" src="../../assets/images/squarePrint.svg" alt="square pattern">
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-indicator__wrapper"><div class="blue-bar"></div></div>
       </div>
 
       <img class="cube" src="../../assets/images/cube.png" alt="cube image">
@@ -83,17 +87,29 @@ import {BackgroundColor, TextColor} from "@/enums/ColorBackgroundButtonModifiers
       gap: 24px;
 
       button {
+        padding: 2px 0;
         font-size: $font-12px;
         font-family: "neue-montreal-regular", serif;
         color: $light-blue;
         text-transform: uppercase;
         letter-spacing: 1px;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+        transition: $time-hover-anim;
       }
 
-      .gray {
+      button:hover {
+        border-bottom: 2px solid $light-gray;
+      }
+
+      .selected {
         color: $light-gray;
+        cursor: default;
       }
 
+      button:hover.selected {
+        border-bottom: 3px solid transparent;
+      }
     }
 
     .right-group {
@@ -114,7 +130,7 @@ import {BackgroundColor, TextColor} from "@/enums/ColorBackgroundButtonModifiers
   .main-section {
     padding: 33px 40px 0 40px;
 
-    .wrapper {
+    &__wrapper {
       height: 674px;
       display: flex;
       background-color: $dirty-w;
@@ -160,7 +176,43 @@ import {BackgroundColor, TextColor} from "@/enums/ColorBackgroundButtonModifiers
         top: 100px;
       }
 
+      .scroll-indicator {
+        width: 2px;
+        height: 40px;
+        position: absolute;
+        top: 516px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+
+        &__wrapper {
+          position: relative;
+          .blue-bar {
+            width: 2px;
+            height: 20px;
+            background-color: $blue;
+            position: absolute;
+            left: 0;
+            top: -40;
+            animation: top-down 3.2s infinite ;
+          }
+        }
+
+      }
+
     }
+  }
+}
+
+@keyframes top-down {
+  0% {
+    transform: translateY(-320%);
+  }
+  70% {
+    transform: translateY(320%);
+  }
+  100% {
+    transform: translateY(320%);
   }
 }
 </style>

@@ -27,6 +27,16 @@ const colorBackgroundButtonClassName = computed(() => {
 .color-background-button {
   padding: 15px 32px;
   border-radius: 4px;
+  transition: $time-hover-anim;
+}
+
+.color-background-button:hover {
+  filter: brightness(0.9);
+}
+
+.color-background-button:active {
+  filter: brightness(0.7);
+  transition: $time-click-anim;
 }
 
 .color-background-button.text-black {
