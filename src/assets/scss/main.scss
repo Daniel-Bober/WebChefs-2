@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "neue-montreal-regular";
+  src: url("../fonts/NeueMontreal-Regular.otf");
+}
+@font-face {
+  font-family: "neue-montreal-medium";
+  src: url("../fonts/NeueMontreal-Medium.otf");
+}
+@font-face {
+  font-family: "neue-montreal-bold";
+  src: url("../fonts/NeueMontreal-Bold.otf");
+}
+@font-face {
+  font-family: "gosha-sans-regular";
+  src: url("../fonts/GoshaSansRegular.otf");
+}
+@font-face {
+  font-family: "neue-montreal-bold";
+  src: url("../fonts/GoshaSansBold.otf");
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: "neue-montreal-medium", serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
