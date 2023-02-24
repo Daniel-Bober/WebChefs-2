@@ -29,13 +29,15 @@
 
   <div class="main-section">
     <div class="main-section__wrapper">
+
       <div class="left-group">
-        <div class="header">
+        <h1 class="header">
           Kick-start your <span>Fintech Project</span> with a team that feels like yours
-        </div>
+        </h1>
 
         <ColorBackgroundButton
-            :text-color="TextColor.white" :background-color="BackgroundColor.blue"
+            :text-color="TextColor.white"
+            :background-color="BackgroundColor.blue"
         >Schedule a free expert session</ColorBackgroundButton>
       </div>
 
@@ -65,7 +67,6 @@ import {BackgroundColor, TextColor} from "@/enums/ColorBackgroundButtonModifiers
 
 <style lang='scss' scoped>
 .hero-section {
-
 
   .nav-bar{
     height: 130px;
@@ -144,9 +145,10 @@ import {BackgroundColor, TextColor} from "@/enums/ColorBackgroundButtonModifiers
 
         .header {
           max-width: 704px;
-          margin-bottom: 46px;
+          margin:0 0 46px 0;
           font-family: "neue-montreal-regular", serif;
           font-size: $font-64px;
+          font-weight: normal;
           color: $dark-blue;
 
           span {
@@ -165,6 +167,7 @@ import {BackgroundColor, TextColor} from "@/enums/ColorBackgroundButtonModifiers
           position: absolute;
           top: 58px;
           right: 78px;
+          z-index: -1;
         }
       }
 
@@ -197,9 +200,7 @@ import {BackgroundColor, TextColor} from "@/enums/ColorBackgroundButtonModifiers
             animation: top-down 3.2s infinite ;
           }
         }
-
       }
-
     }
   }
 }

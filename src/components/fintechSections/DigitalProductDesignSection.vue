@@ -39,7 +39,6 @@
   gap: 192px;
 
   .wrapper {
-
     .flex {
       display: flex;
       justify-content: center;

@@ -5,14 +5,14 @@
       <div class="head-visual__wrapper">
 
         <div class="mobile-mockup-one">
-          <div class="mobile-mockup-one__wrapper">
+          <div>
             <img src="../../assets/images/PhoneMockup-1.png" alt="phone mockup 1">
             <img class="gif" src="../../assets/images/gifs/SplitCircle.gif" alt="gif">
           </div>
         </div>
 
         <div class="mobile-mockup-two">
-          <div class="mobile-mockup-two__wrapper">
+          <div>
             <img src="../../assets/images/PhoneMockup-2.png" alt="phone mockup 1">
             <img class="gif" src="../../assets/images/gifs/HomeAppliancesAnimation.gif" alt="gif">
           </div>
@@ -21,7 +21,6 @@
         <img class="chart-image" src="../../assets/images/ChartImage.png" alt="chart image">
 
       </div>
-
     </div>
 
     <div class="headline-content">
@@ -49,7 +48,6 @@
       </div>
 
       <button class="read-more-button">Read more obout fintech benefits <img src="../../assets/images/icons/arrow-top.svg" alt="arrow icon"></button>
-
     </div>
 
   </div>
@@ -75,33 +73,28 @@
         position: absolute;
         top: 51px;
 
-        &__wrapper {
-
-          .gif {
-            width: 175px;
-            height: 178px;
-            position: absolute;
-            top: 28px;
-            left: 50%;
-            transform: translateX(-50%);
-          }
+        .gif {
+          width: 175px;
+          height: 178px;
+          position: absolute;
+          top: 28px;
+          left: 50%;
+          transform: translateX(-50%);
         }
+
       }
 
       .mobile-mockup-two {
         position: absolute;
         left: 160px;
 
-        &__wrapper {
-
-          .gif {
-            width: 208px;
-            height: 164px;
-            position: absolute;
-            top: 115px;
-            left: 50%;
-            transform: translateX(-50%);
-          }
+        .gif {
+          width: 208px;
+          height: 164px;
+          position: absolute;
+          top: 115px;
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
 
@@ -144,6 +137,7 @@
 
     .description {
       margin-top: 43px;
+
       p {
         margin: 0;
         font-family: "neue-montreal-regular", serif;
@@ -162,6 +156,7 @@
     .read-more-button {
       margin-top: 43px;
       padding: 15px 32px;
+      font-size: $font-16px;
       color: $blue;
       border-radius: 4px;
       cursor: pointer;
@@ -176,6 +171,5 @@
       background-color: rgba(122, 194, 220, 0.5);
     }
   }
-
 }
 </style>

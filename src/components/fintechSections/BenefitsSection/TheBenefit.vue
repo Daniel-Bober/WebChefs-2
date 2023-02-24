@@ -35,7 +35,7 @@
     font-family: "neue-montreal-regular", serif;
     font-size: $font-18px;
     color: $light-blue;
+    line-height: 28px;
   }
-
 }
 </style>

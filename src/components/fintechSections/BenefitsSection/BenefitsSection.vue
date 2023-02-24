@@ -25,7 +25,6 @@
             </template>
           </TheBenefit>
 
-
           <TheBenefit class="no-hover-tile">
             <template v-slot:icon>
               <img src="../../../assets/images/icons/benefit-icon-2.svg" alt="benefit icon">
@@ -92,6 +91,8 @@
               Find patterns in the behavior of your customers using machine learning and forecast when they need specific products
             </div>
 
+            <button class="check-out-button">Check out Case Study <img src="../../../assets/images/icons/arrow-top.svg" alt="arrow icon"></button>
+
             <div class="white-square"></div>
             <div class="white-square secondary"></div>
           </div>
@@ -127,7 +128,6 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
       flex-direction: column;
       gap: 24px;
 
-
       .section-name {
         padding-bottom: 8px;
         display: inline;
@@ -136,7 +136,6 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
         letter-spacing: 1px;
         text-transform: uppercase;
       }
-
 
       .title {
         font-size: $font-40px;
@@ -187,7 +186,7 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
         .info-section {
           width: 820px;
           height: 440px;
-          padding: 97px 0 0 153px;
+          padding: 90px 0 0 170px;
           display: flex;
           flex-direction: column;
           position: absolute;
@@ -211,6 +210,27 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
             font-family: "neue-montreal-regular", serif;
             font-size: $font-18px;
             color: $primary-w;
+            line-height: 28px;
+          }
+
+          .check-out-button {
+            width: 250px;
+            margin-top: 32px;
+            padding: 15px 32px;
+            font-size: $font-16px;
+            color: $blue;
+            background-color: $primary-w;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: $time-hover-anim;
+
+            img {
+              margin-left: 8px;
+            }
+          }
+
+          .check-out-button:hover {
+            filter: brightness(0.7);
           }
 
           .white-square {
@@ -258,7 +278,6 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
       right: 308px;
 
     }
-
   }
 }
 </style>
