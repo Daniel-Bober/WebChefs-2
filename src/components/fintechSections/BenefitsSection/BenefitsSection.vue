@@ -3,7 +3,7 @@
     <div class="benefits-section__wrapper">
 
       <div class="headline">
-        <div class="wrapper">
+        <div>
           <div class="section-name">benefits for your business</div>
         </div>
 
@@ -96,9 +96,9 @@
             <div class="white-square secondary"></div>
           </div>
         </div>
-
       </div>
 
+      <img class="color-squares-bg" src="../../../assets/images/squares-background.svg" alt="background image">
     </div>
   </div>
 </template>
@@ -127,16 +127,16 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
       flex-direction: column;
       gap: 24px;
 
-      .wrapper {
-        .section-name {
-          padding-bottom: 8px;
-          display: inline;
-          border-bottom: 3px solid $juicy-yellow;
-          font-size: $font-12px;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-        }
+
+      .section-name {
+        padding-bottom: 8px;
+        display: inline;
+        border-bottom: 3px solid $juicy-yellow;
+        font-size: $font-12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
       }
+
 
       .title {
         font-size: $font-40px;
@@ -221,6 +221,7 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
             right: 0;
             background-color: $primary-w;
           }
+
           .white-square.secondary {
             bottom: 40px;
             right: 40px;
@@ -247,6 +248,15 @@ import TheBenefit from "@/components/fintechSections/BenefitsSection/TheBenefit.
 
     .hover-benefits-background:hover .no-hover-tile {
       opacity: 0;
+    }
+
+    .color-squares-bg {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 118px;
+      right: 308px;
+
     }
 
   }
