@@ -27,7 +27,10 @@
     <div class="headline-content">
 
       <div class="headline">
-        <div class="section-name">for who?</div>
+        <div>
+          <div class="section-name">for who?</div>
+        </div>
+
         <div class="title">
           Are you running a <span>Fintech Startup</span> or need <span>Revamp your product </span>?
         </div>
@@ -108,7 +111,6 @@
         right: 0;
       }
     }
-
   }
 
   .headline-content {
@@ -116,7 +118,10 @@
     margin-left: 67px;
 
     .headline {
-      margin-bottom: 43px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
       .section-name {
         width: 70px;
         padding-bottom: 8px;
@@ -138,6 +143,7 @@
     }
 
     .description {
+      margin-top: 43px;
       p {
         margin: 0;
         font-family: "neue-montreal-regular", serif;
